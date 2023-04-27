@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Life of Pablo Album Art Generator</title>
+        <link href='tlop.css' rel='stylesheet' type='text/css'>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="title" content="The Life of Pablo Album Art Generator">
+        <meta name="description" content="Generate your own TLoP-style art.">
+        <meta name="theme-color" content="#f58b57">
+        
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://tlop.xyl.sh/">
+        <meta property="og:title" content="The Life of Pablo Album Art Generator">
+        <meta property="og:description" content="Generate your own TLoP-style art.">
+        <meta property="og:image" content="https://tlop.xyl.sh/resources/example.png">
+
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://tlop.xyl.sh/">
+        <meta property="twitter:title" content="The Life of Pablo Album Art Generator">
+        <meta property="twitter:description" content="Generate your own TLoP-style art.">
+        <meta property="twitter:image" content="https://tlop.xyl.sh/resources/example.png">
+    </head>
+    <body>
+        <h1>TLOP ART GENERATOR</h1>
+        <svg viewBox="0 0 2000 2000" id="svg">
+            <style>
+                svg {
+                    background: #F58B57;
+                }
+
+                .alignRight {
+                    text-anchor: end;
+                }
+                
+                .primaryText, .secondaryText, .tertiaryText, .quaternaryText {
+                    font-family: 'HelveticaBold';
+                }
+
+                .primaryText, .secondaryText {
+                    font-size: 128px;
+                }
+
+                .secondaryText {
+                    letter-spacing: 2px;
+                }
+
+                .tertiaryText, .quaternaryText {
+                    font-size: 51.5px;
+                    letter-spacing: 0.5px;
+                }
+            </style>
+            <text x="292" y="188" class="primaryText"></text>
+            <text x="292" y="341" class="primaryText"></text>
+            <text x="292" y="494" class="primaryText"></text>
+            <text x="292" y="647" class="primaryText"></text>
+            <text x="292" y="800" class="primaryText"></text>
+            <text x="292" y="953" class="primaryText"></text>
+            <text x="292" y="1263" class="primaryText"></text>
+
+            <text x="1359" y="188" class="secondaryText"></text>
+            <text x="1218" y="341" class="secondaryText"></text>
+            <text x="1218" y="494" class="secondaryText"></text>
+            <text x="1218" y="647" class="secondaryText"></text>
+            <text x="1218" y="800" class="secondaryText"></text>
+            <text x="1218" y="953" class="secondaryText"></text>
+            <text x="1288" y="1263" class="secondaryText"></text>
+
+            <text x="245.5" y="1328" class="tertiaryText"></text>
+            <text x="245.5" y="1391" class="tertiaryText"></text>
+            <text x="245.5" y="1455" class="tertiaryText"></text>
+            <text x="245.5" y="1518" class="tertiaryText"></text>
+            <text x="245.5" y="1581" class="tertiaryText"></text>
+            <text x="245.5" y="1644" class="tertiaryText"></text>
+            <text x="245.5" y="1707" class="tertiaryText"></text>
+            <text x="245.5" y="1770" class="tertiaryText"></text>
+            <text x="245.5" y="1833" class="tertiaryText"></text>
+            <text x="245.5" y="1896" class="tertiaryText"></text>
+
+            <text x="1338" y="1328" class="quaternaryText"></text>
+            <text x="1338" y="1391" class="quaternaryText"></text>
+            <text x="1338" y="1455" class="quaternaryText"></text>
+            <text x="1338" y="1518" class="quaternaryText"></text>
+            <text x="1338" y="1581" class="quaternaryText"></text>
+            <text x="1338" y="1644" class="quaternaryText"></text>
+            <text x="1338" y="1707" class="quaternaryText"></text>
+            <text x="1338" y="1770" class="quaternaryText"></text>
+            <text x="1338" y="1833" class="quaternaryText"></text>
+            <text x="1338" y="1896" class="quaternaryText"></text>
+
+            <image id="image1" class="image" midpoint="808.5" x="411" y="602" height="554"></image>
+            <image id="image2" class="image" midpoint="1157.5" x="884" y="1392" height="469"></image>
+        </svg>
+        <div class="inputs">
+            <span id="saveButton">Download Image</span><br>
+            <div style="display: flex;"><input value="THE LIFE OF" id="primaryInput" class="textInput" autocomplete="off"><span id="leftAlign"></span><span id="rightAlign"></span></div><br>
+            <input value="PABLO" id="secondaryInput" class="textInput" autocomplete="off"><br>
+            <input value="WHICH / ONE" id="tertiaryInput" class="textInput" autocomplete="off"><br>
+            <div style="display: flex;"><input value="WHICH / ONE" id="quaternaryInput" class="textInput" autocomplete="off" disabled><span id="quaternaryCheckbox" title="Separate bottom columns"></div><br>
+            <input id="firstImage" name="firstImage" type="file" accept="image/*">
+            <label for="firstImage" class="fileInput">TOP IMAGE</label>
+            <p>Recommended resolution: 795 x 554</p><br>
+            <input id="secondImage" name="secondImage" type="file" accept="image/*">
+            <label for="secondImage" class="fileInput">BOTTOM IMAGE</label>
+            <p>Recommended resolution: 547 x 469</p><br>
+            <div style="display: flex;"><input value="#F58B57" id="backgroundColor" class="textInput" autocomplete="off">
+                <label for="backgroundColorPicker" class="colorPicker"></label><input type="color" value="#F58B57" id="backgroundColorPicker" class="colorPicker"></span></span></div>
+            <p>Background colour</p><br>
+            <div style="display: flex;"><input value="#000000" id="textColor" class="textInput" autocomplete="off">
+                <label for="textColorPicker" class="colorPicker"></label><input type="color" value="#000000" id="textColorPicker" class="colorPicker"></span></span></div>
+            <p>Text colour</p><br>
+        </div>
+    </body>
+</html>
+
+<script src="tlop.js"></script> 
